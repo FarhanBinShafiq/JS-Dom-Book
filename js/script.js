@@ -21,6 +21,7 @@ submitBtn.addEventListener('click', (e) => {
     newBook.innerHTML = bookInput.value
     newRow.appendChild(newBook)
     console.log(newRow.appendChild(newBook))
+
     //Author 
     let newAuthor = document.createElement('td')
     newAuthor.innerHTML = authorInput.value
@@ -32,7 +33,17 @@ submitBtn.addEventListener('click', (e) => {
     let newYear = document.createElement('td')
     newYear.innerHTML = yearInput.value
     newRow.appendChild(newYear)
+    
+    //delete
+    let newButton = document.createElement('td')
+    const deleteButton = document.createElement('button')
+    deleteButton.innerText = 'Delete'
+    deleteButton.id = 'button'
+    newButton.appendChild(deleteButton)
+    newRow.appendChild(newButton)
 
+
+    //Display On the UI
     bookList.appendChild(newRow)
 
 })
