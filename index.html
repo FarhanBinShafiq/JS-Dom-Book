@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Book Archiver</title>
+</head>
+
+<body>
+    <h1>Book List</h1>
+
+    <div class="book-form">
+        <form action="">
+            <div>
+                <p>Book Name :</p>
+                <input type="text" id="book">
+            </div>
+
+            <div>
+                <p>Author Name :</p>
+                <input type="text" id="author">
+            </div>
+
+            <div>
+                <p>Publish Year :</p>
+                <input type="text" id="year">
+            </div>
+
+            <br />
+
+            <input id="submitButton" type="button" value="Submit">
+
+        </form>
+    </div>
+
+
+    <div class="table">
+
+
+        <table class="d">
+            <tr>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Publish</th>
+                <th>Action</th>
+            </tr>
+
+            <tbody class="books-list">
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                    <td>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
