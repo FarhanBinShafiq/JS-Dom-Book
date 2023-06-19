@@ -33,7 +33,7 @@ submitBtn.addEventListener('click', (e) => {
     let newYear = document.createElement('td')
     newYear.innerHTML = yearInput.value
     newRow.appendChild(newYear)
-    
+
     //delete
     let newButton = document.createElement('td')
     const deleteButton = document.createElement('button')
@@ -41,11 +41,18 @@ submitBtn.addEventListener('click', (e) => {
     deleteButton.id = 'button'
     newButton.appendChild(deleteButton)
     newRow.appendChild(newButton)
-
+    
+     //Delete binds
+    
+     deleteButton.addEventListener('click',()=>{
+        console.log('Delete')
+        newRow.remove()
+     })
 
     //Display On the UI
     bookList.appendChild(newRow)
-
+    
+  
 })
 
-
+ 
